@@ -1,0 +1,4 @@
+<input type="text" class="form-control" datevalidator id="date"
+       name="date" [(ngModel)]="mydate"   #dateIn="ngModel"  saMaskedInput="99/99/9999" saMaskedPlaceholder= "-"
+>
+<p *ngIf="dateIn.errors?.datevalidator">Please provide a valid Date</p>
